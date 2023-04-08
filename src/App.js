@@ -1,6 +1,11 @@
 import React, { Component, Suspense, lazy } from "react";
 import "./App.scss";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import { history } from "./services/helpers/history";
 import Footer from "./components/Footer/Footer";
@@ -29,7 +34,7 @@ class App extends Component {
   setCartItems = (updatedItems) => {
     this.setState({ cartItems: [...updatedItems] });
   };
-  
+
   // Set breadcrumb
   setBreadcrumb = (updatedBreadcrumb) => {
     this.setState({ breadcrumb: [...updatedBreadcrumb] });
@@ -51,7 +56,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      {/* Set up React Router */}
+        {/* Set up React Router */}
         <Router history={history}>
           {/* Render Navbar component */}
           <Navbar
@@ -65,13 +70,14 @@ class App extends Component {
           {/* Set up lazy-loading of routes */}
           <Suspense fallback={<div className="loading">Loading ...</div>}>
             <Routes>
+              {/* Redirect from /task-ecommerce to / */}
+              <Route path="/task-ecommerce" element={<Navigate to="/" />} />
               {/* Render ItemDetails component for root route */}
               <Route
                 path="/"
-                exact
                 element={
                   <ItemDetails
-                    // Pass state properties 
+                    // Pass state properties
                     cartItems={this.state.cartItems}
                     setCartItems={this.setCartItems}
                     setBrandLogo={this.setBrandLogo}
@@ -83,7 +89,7 @@ class App extends Component {
             </Routes>
           </Suspense>
 
-         {/* Render Footer component */}
+          {/* Render Footer component */}
           <Footer />
         </Router>
       </div>
