@@ -1,0 +1,6 @@
+@import "../../Variables.scss";
+.footer {
+  .subscribe-input { position: relative; }
+  .subscribe-input input { padding-right: 100px !important; padding-left: 20px !important; width: 100%; height: 40px; }
+  .subscribe-input button { position: absolute; top: 5px; right: 5px; pointer-events: none; height: 25px; border: 0px; border-radius: 30px; background-color: $primary; height: 30px; }
+}
