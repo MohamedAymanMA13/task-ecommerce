@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/task-ecommerce/static/css/main.242db34e.css",
-    "main.js": "/task-ecommerce/static/js/main.1a82bdb8.js",
+    "main.js": "/task-ecommerce/static/js/main.a5682e94.js",
     "static/js/717.963694c1.chunk.js": "/task-ecommerce/static/js/717.963694c1.chunk.js",
     "static/js/787.48755ccd.chunk.js": "/task-ecommerce/static/js/787.48755ccd.chunk.js",
     "static/media/similarProduct2.png": "/task-ecommerce/static/media/similarProduct2.de5c4d56e26d8c2d8cbc.png",
@@ -44,12 +44,12 @@
     "static/media/plus.svg": "/task-ecommerce/static/media/plus.88401e0747c0d422b487442cb686ef05.svg",
     "static/media/minus.svg": "/task-ecommerce/static/media/minus.a80d09d94ecbf89840360848e8f52734.svg",
     "main.242db34e.css.map": "/task-ecommerce/static/css/main.242db34e.css.map",
-    "main.1a82bdb8.js.map": "/task-ecommerce/static/js/main.1a82bdb8.js.map",
+    "main.a5682e94.js.map": "/task-ecommerce/static/js/main.a5682e94.js.map",
     "717.963694c1.chunk.js.map": "/task-ecommerce/static/js/717.963694c1.chunk.js.map",
     "787.48755ccd.chunk.js.map": "/task-ecommerce/static/js/787.48755ccd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.242db34e.css",
-    "static/js/main.1a82bdb8.js"
+    "static/js/main.a5682e94.js"
   ]
 }
